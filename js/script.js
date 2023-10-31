@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // Function to fetch meaning from the API
 async function fetchMeaningFromAPI(word) {
-    const apiUrl = 'https://aeona3.p.rapidapi.com/';
-    const apiKey = '0ac13f9a33msh14c67dfcc5cb626p15b1eajsnaa637d740072';
+    const apiUrl = 'rapidapi.com';
+    const apiKey = '197c55e887msh979c67cb43b567ep108ab1jsn5bf3e41fff64';
 
     const options = {
         method: 'GET',
@@ -14,7 +14,7 @@ async function fetchMeaningFromAPI(word) {
         },
         headers: {
             'X-RapidAPI-Key': apiKey,
-            'X-RapidAPI-Host': 'aeona3.p.rapidapi.com'
+            'X-RapidAPI-Host': 'rapidapi.com'
         }
     };
 
