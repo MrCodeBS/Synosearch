@@ -1,1 +1,13 @@
-/var/folders/9h/y_5zp0nj4l35dw4nz32vgybc0000gn/T/com.apple.useractivityd/shared-pasteboard/items/D17366AD-C37B-4A86-A6DB-FC33A4C5CE67/8e73f9180f0fca4f68308c21be50b396a32cc86f.rtfd
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SynoSearch</RootNamespace>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>
