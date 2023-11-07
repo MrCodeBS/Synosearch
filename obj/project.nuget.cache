@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HhKshRx68LnfWxS6rHtpWQ8bBRXaxL+lNJ2rjNhaU0ihpxfyr4YsS5HPcWhqkSDjzQUWFMPC/lMi6tXUctOWvw==",
+  "success": true,
+  "projectFilePath": "/Users/bhupindersingh/Desktop/SynoSearchApp/SynoSearchApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/bhupindersingh/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

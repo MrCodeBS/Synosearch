@@ -1,47 +1,40 @@
 import axios from 'axios';
 
-// Function to fetch meaning from the API
-async function fetchMeaningFromAPI(word) {
-    const apiUrl = 'rapidapi.com';
-    const apiKey = '197c55e887msh979c67cb43b567ep108ab1jsn5bf3e41fff64';
-
-    const options = {
-        method: 'GET',
-        url: apiUrl,
-        params: {
-            text: word, // Pass the word you want to search for
-            userId: '12312312312'
-        },
-        headers: {
-            'X-RapidAPI-Key': apiKey,
-            'X-RapidAPI-Host': 'rapidapi.com'
-        }
+async function fetchMeaningFromAPI(word, language) {
+    const apiUrl = `https://${language}.wikipedia.org/w/api.php`;
+    const params = {
+        action: 'query',
+        format: 'json',
+        prop: 'extracts',
+        explaintext: true,
+        titles: word
     };
 
     try {
-        console.log('Sending API request...');
-        const response = await axios.request(options);
-        console.log('API Response:', response);
-        return response.data; // Assuming the API response contains the data you need
+        const response = await axios.get(apiUrl, { params });
+        const pages = response.data.query.pages;
+        const pageId = Object.keys(pages)[0];
+        const meaning = pages[pageId].extract;
+        return meaning || 'No information found on Wikipedia.';
     } catch (error) {
         console.error('Error:', error);
         throw new Error('Error fetching meaning.');
     }
 }
 
-// Function to update the meaning in the HTML
 function updateMeaning(meaning) {
     const meaningElement = document.getElementById('meaning');
     meaningElement.textContent = meaning;
 }
 
-// Function to handle search button click
 async function searchMeaning() {
     const wordInput = document.getElementById('wordInput');
+    const languageSelect = document.getElementById('language');
     const word = wordInput.value;
+    const language = languageSelect.value;
 
     try {
-        const meaning = await fetchMeaningFromAPI(word);
+        const meaning = await fetchMeaningFromAPI(word, language);
         updateMeaning(meaning);
     } catch (error) {
         console.error('Error:', error);
@@ -49,6 +42,5 @@ async function searchMeaning() {
     }
 }
 
-// Attach the searchMeaning function to the button click event
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', searchMeaning);

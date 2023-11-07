@@ -73,7 +73,7 @@ class Program
         Console.Write("Enter a word: ");
         string word = Console.ReadLine();
 
-        if (dictionary.TryGetValue(word, out WordEntry entry))
+        if (dictionary.TryGetValue(word, out WordEntry entry) && entry != null)
         {
             Console.WriteLine($"Meaning of {word}: {entry.Meaning}");
             Console.WriteLine($"Added at: {entry.AddedAt}");

@@ -3,24 +3,22 @@
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynoSearchApp", "SynoSearchApp.csproj", "{F1CC421C-9524-4F26-806A-486260F329EF}"
-    ProjectSection(ProjectDependencies) = postProject
-    EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1CC421C-9524-4F26-806A-486260F329EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1CC421C-9524-4F26-806A-486260F329EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1CC421C-9524-4F26-806A-486260F329EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1CC421C-9524-4F26-806A-486260F329EF}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA715430-ABD7-4542-948A-7CC65E7C84ED}
-	EndGlobalSection
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {F1CC421C-9524-4F26-806A-486260F329EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {F1CC421C-9524-4F26-806A-486260F329EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {F1CC421C-9524-4F26-806A-486260F329EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {F1CC421C-9524-4F26-806A-486260F329EF}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+    GlobalSection(ExtensibilityGlobals) = postSolution
+        SolutionGuid = {EA715430-ABD7-4542-948A-7CC65E7C84ED}
+    EndGlobalSection
 EndGlobal

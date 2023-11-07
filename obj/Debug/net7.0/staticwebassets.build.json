@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kcElmkbBpHMEH5fMMAYdkT+wVJPjAc+NHRbtRPcgoDE=",
+  "Source": "SynoSearchApp",
+  "BasePath": "_content/SynoSearchApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
